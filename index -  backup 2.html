@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS.css">
+    <script defer src="game.js"></script>
+    <title>Text Adventure</title>
+</head>
+
+<body>
+
+    <!--data-src can be used instead of img src and can then be references by JAVASCRIPT - maybe i can use data-src to consult a library of images based on a button press 
+        - no chance of a user going through the images too fast as each button press generates new dialogue-->
+
+        
+    <div class="container">
+        <div id="text">Text</div>
+
+        <div id="option-buttons" class="btn-grid">
+
+
+            
+            <button class="btn" id = button1>Option 1</button>
+            <button class="btn"id = button2>Option 2</button>
+            <button class="btn" id = button3>Option 3</button>
+            <button class="btn" id = button4>Option 4</button>
+        </div>
+
+
+
+  
+         <!--NEXT BUTTON -->
+         <div id="imglist">
+            <a href="javascript:nextImage('startImg')"><img src="next.jpg" alt=""></a>
+     </div> 
+        
+        <br>
+        <br>
+        <h4>Music</h4>
+        <audio controls autoplay>
+         
+            <source src="THING.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+
+    <!--IMAGE -->
+    <div id="splash">
+        <img src="image1.jpg" alt="" id="startImg" class="hero">
+
+</body>
+<script src="snow.js"></script>
+
+</html>

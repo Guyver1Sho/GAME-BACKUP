@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: auto;
+    position: relative;
+    font-family: 'Gotham', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+html {
+    
+    background-image: url(./BACKGROUND.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: -2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+    
+    
+}
+
+
+body #image-section {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    min-height: 500px;
+    display: flex;
+    z-index: 3;
+    
+      
+}
+
+#room-image{
+    position: fixed;
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+    z-index: 3;
+
+}
+
+body #text-section {
+    background-image: url(./textbox.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    width: 1000px;
+    min-height: 200px;
+    font-style: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    top: 70px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+
+
+body #option-section {
+    top: 80px;
+    background: #d4bc87;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    min-height: 100px;
+    z-index: 3;
+}
+
+.btn-grid {
+    
+    width: 700px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    min-height: 100px;
+    position:relative;
+   
+}
+
+
+
+
+.btn {
+    /*background-color: hsl(200, 100%, 50%);*/
+    /*border: 1px solid hsl(200, 100%, 30%);*/
+    background-image: url(./BLANKKEY.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+    font-size: 20px;
+    outline: none;
+    height: 150px;
+    width: 300px;
+}
+
+.btn:hover {
+    border-color: black;
+    /*background-image: url(./BLANKKEYDARK.png);*/
+}
+
+#snow-js {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+/*WORKING :) */
+body .Blackbox {
+    background-color: black;
+    z-index: 10;
+    opacity: 0;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    top: 130px;
+    min-height: 500px;
+    display: flex;
+}
+
+#screen {
+ 
+    object-fit: fill;
+    position: fixed;
+    display:flex;
+   height: 585px;
+    width: 1120px;
+    z-index: -1;
+    top: 95px;
+    left: 880px;
+   
+}

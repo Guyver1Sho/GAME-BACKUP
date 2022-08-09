@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS.css">
+    <script defer src="game3.js"></script>
+    <script defer src="imagefade.js"></script>
+    <title>Text Adventure</title>
+</head>
+
+<body>
+
+        <!--data-src can be used instead of img src and can then be references by JAVASCRIPT - maybe i can use data-src to consult a library of images based on a button press 
+        - no chance of a user going through the images too fast as each button press generates new dialogue-->
+        <header>
+        </header>
+       
+
+        <div class="screencontainer">
+            <img id="screen" img src= "SCREEN.PNG"/>
+        </div>
+    
+        <div id= 'Blackbox' class='Blackbox'> 
+        </div>
+    
+        <section id="image-section">
+            <div class="image">
+                <img id="room-image" />
+            </div>
+        </section>
+   
+        <section id="text-section">
+            <div class="text">
+                <div id="text">Text</div>
+            </div>
+       
+        </section>
+
+        
+
+        
+        <section id="option-section">
+            <div class="container">
+            <div  id = "option-buttons" class="btn-grid">
+            <button class="btn" id = button1 >Option 1</button>
+            <button class="btn" id = button2 >Option 2</button>
+            <button class="btn" id = button3 >Option 3</button>
+            <button class="btn" id = button4 >Option 4</button>
+        </div>
+      
+        <!--<button class="btn" id = "buttontest" >buttontest</button>-->
+        <br>
+        
+        <h3>Play background music for best experience</h3>
+
+        <br>
+        <audio controls autoplay>
+         
+          
+            
+            <source src="THING.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+         </div>
+   
+
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+    
+</body>
+<div id="snow-js">
+    <script src="snow.js"></script>
+    </div>
+</html>
